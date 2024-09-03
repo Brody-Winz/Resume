@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #d3d3d3; /* Soft grey background */
+    color: #2f4f4f; /* Dark slate text */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #87ceeb; /* Light blue finish */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+/* Section Styles */
+section {
+    background-color: #ffffff; /* White accent */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, border-left 0.3s ease;
+    border-left: 5px solid transparent; /* Initial state with transparent border */
+}
+
+section:hover {
+    transform: translateY(-5px);
+    border-left: 5px solid #87ceeb; /* Light blue border on hover */
+}
+
+section h3 {
+    color: #2f4f4f; /* Dark slate headings */
+    margin-top: 0;
+}
+
+/* Interactive Strong and Dropdown Styles */
+strong {
+    cursor: pointer;
+    color: #2f4f4f; /* Dark slate text */
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+strong:after {
+    content: ' ▼'; /* Dropdown arrow */
+    font-size: 12px;
+    position: absolute;
+    right: -15px;
+    margin-top: -10px;
+}
+
+/* Rotate arrow when expanded */
+strong.expanded:after {
+    content: ' ▲'; /* Change arrow on expansion */
+}
+
+/* Dropdown content style */
+strong + span {
+    display: none;
+    margin-left: 10px; /* Indentation for readability */
+    margin-top: -5px;  /* Pull the span closer to the <strong> */
+}
+
+/* Link Styles */
+a {
+    color: #2f4f4f; /* Dark slate text color for high contrast */
+    text-decoration: none;
+    font-weight: bold; /* Make links bold for better visibility */
+}
+
+a:hover {
+    color: #87ceeb; /* Light blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
