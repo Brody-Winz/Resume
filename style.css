@@ -91,7 +91,10 @@ strong + span {
     margin-left: 10px;
     margin-bottom: -10px;
 }
-
+span {
+    position: relative;
+    top: -25px;
+}
 a {
     color: #004d4d; /* Dark teal for links */
     text-decoration: none;
