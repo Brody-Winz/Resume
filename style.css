@@ -90,8 +90,6 @@ strong + span {
     display: none;
     margin-left: 10px;
     margin-bottom: -10px;
-}
-span {
     position: relative;
     top: -25px;
 }
