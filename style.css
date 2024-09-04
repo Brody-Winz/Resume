@@ -1,19 +1,26 @@
-/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto'; 
     margin: 0;
     padding: 20px;
-    background-color: #d3d3d3; /* Soft grey background */
-    color: #2f4f4f; /* Dark slate text */
+    background-color: #e0f7fa; /* Light mint background */
+    color: #000000; /* Black text color */
     line-height: 1.6;
+    display: flex;
+    justify-content: center;
 }
 
-/* Header Styles */
+.container {
+    max-width: 800px; /* Set a maximum width for the container */
+    width: 100%; /* Allow it to scale down on smaller screens */
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
 header {
     text-align: center;
     margin-bottom: 20px;
-    background-color: #87ceeb; /* Light blue finish */
-    color: #ffffff; /* White text for contrast */
+    background-color: #004d4d; /* Dark teal background for header */
+    color: #ffffff; /* White text color */
     padding: 20px;
     border-radius: 8px;
 }
@@ -27,64 +34,71 @@ header p {
     margin: 5px 0;
 }
 
-/* Section Styles */
+header a {
+    color: #e0f7fa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ffffff;  
+    text-decoration: underline;
+}
+
 section {
-    background-color: #ffffff; /* White accent */
+    background-color: #ffffff; /* White background */
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease, border-left 0.3s ease;
-    border-left: 5px solid transparent; /* Initial state with transparent border */
+    border-left: 5px solid transparent;
+    max-width: 100%; 
 }
 
 section:hover {
     transform: translateY(-5px);
-    border-left: 5px solid #87ceeb; /* Light blue border on hover */
+    border-left: 5px solid #ff6f61; /* Bright coral border on hover */
 }
 
 section h3 {
-    color: #2f4f4f; /* Dark slate headings */
+    color: #004d4d; /* Dark teal for section headers */
     margin-top: 0;
 }
 
-/* Interactive Strong and Dropdown Styles */
 strong {
     cursor: pointer;
-    color: #2f4f4f; /* Dark slate text */
+    color: #ff6f61; /* Dark coral for strong text */
     position: relative;
     display: block;
     margin-bottom: 10px;
 }
 
 strong:after {
-    content: ' ▼'; /* Dropdown arrow */
+    content: ' ▼'; 
     font-size: 12px;
     position: absolute;
     right: -15px;
     margin-top: -10px;
 }
 
-/* Rotate arrow when expanded */
 strong.expanded:after {
-    content: ' ▲'; /* Change arrow on expansion */
+    content: ' ▲'; 
 }
 
-/* Dropdown content style */
 strong + span {
     display: none;
-    margin-left: 10px; /* Indentation for readability */
-    margin-top: -5px;  /* Pull the span closer to the <strong> */
+    margin-left: 10px;
+    margin-bottom: -10px;
 }
 
-/* Link Styles */
 a {
-    color: #2f4f4f; /* Dark slate text color for high contrast */
+    color: #004d4d; /* Dark teal for links */
     text-decoration: none;
-    font-weight: bold; /* Make links bold for better visibility */
+    font-weight: bold;
 }
 
 a:hover {
-    color: #87ceeb; /* Light blue on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: #ff6f61; /* Bright coral on hover */
+    text-decoration: underline; 
 }
